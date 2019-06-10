@@ -11,7 +11,7 @@ int temp;
   for(int i = 0;i<n;i++)  
 {
          System.out.println(sum);
-	sum=sum*sum;
+	sum=sum*11;
          
     }
 }
