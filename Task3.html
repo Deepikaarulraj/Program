@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>Form validation</title>
+</head>
+<body>
+<style>
+body {
+      background-image : url('images.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+</style>
+<form action="Task3.html" name="form1" method="post">
+<center>
+<h1>Registration Form</h1>
+</center>
+<table cellpadding="2" width="20%"  align="center"cellspacing="2">
+<tr>
+<td>Name</td>
+  <td><input type="text" name="textname" id="textname" size="30" ></td>
+ </tr>
+ 
+ <tr>
+<td>Register No</td>
+  <td><input type="text" name="registerno" id="registerno" size="30"></td>
+ </tr>
+  
+ <tr>
+<td>Gender</td>
+  <td><input type="radio" name="gender" value="male" size="10">Male
+   <input type="radio" name="gender" value="Female" size="10" >Female</td>
+ </tr>
+
+<tr>
+  <td>DOB</td>
+  <td><input type="date" name="dob" id="dob" size="30"></td>
+  </tr> 
+ 
+ <tr>
+  <td>EmailId</td>
+ <td><input type="email" name="emailid" id="emailid" size="30"></td>
+  </tr>
+  
+ <tr>
+  <td>MobileNo</td>
+  <td><input type="text" name="mobileno" id="mobileno" ></td>
+</tr>
+
+<tr>
+ <td>City</td>
+ <td><select name="City">
+ <option value="-1" selected>select..</option>
+ <option value="Coimbatore">COIMBATORE</option>
+ <option value="Chennai">CHENNAI</option>
+ <option value="Goa">GOA</option>
+ <option value="Patna">PATNA</option>
+ </select></td>
+ </tr>
+ 
+<tr>
+  <td>Address</td>
+  <td><input type="text" name="personaladdress" id="padd" size="60"></td>
+ </tr>
+ 
+ <tr>
+<td>Course</td>
+ <td><select name="Course" id="course">
+ <option value="-1" selected>select..</option>
+ <option value="B.Tech">B.TECH</option>
+ <option value="MCA">MCA</option>
+ <option value="MBA">MBA</option>
+ <option value="BCA">BCA</option>
+ </select></td>
+ </tr>
+  
+ <tr>
+  <td>Select your file here</td>
+  <td><input type="file" name="file" id="file"></td>
+</tr> 
+
+<tr>
+  <td>Attach your photo</td>
+  <td><input type="file" name="file" id="file"></td>
+</tr> 
+
+<tr>
+  <td><input type="reset"></td>
+  <td colspan="2"><input type="submit" onclick="my()" value="Submit Form"/></td>
+</tr>
+</form>
+</table>
+	<script type="text/javascript">
+function my()
+{
+/*
+var a=document.getElementById("textname").value;
+var zz=/[A-Za-z\s]/;
+
+if(a=="")
+{
+ alert("Enter your name");
+ return false;
+}
+else if(!zz.test(a))
+{
+ alert("Name use in Character Only");
+ return false;
+}
+
+//-------validate email-----
+var email = document.getElementById('emailid');
+    var z = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!z.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+ }
+
+//------validate address----
+var j=document.getElementById("padd").value;
+var t=/[A-Za-z\s]/;
+if(j=="")
+{
+alert("Enter your valid address");
+return false;
+}
+else
+{
+s[5]=j;
+}*/
+/*
+//-----validate gender------------
+var gender=document.getElementsByName("gender");
+var gen=0,z=0;
+for(z=0;z<gender.length;z++)
+{
+    if(gender[z].checked==true) 
+	{	
+       gen=1;
+       break;
+     }
+}    
+console.log(gen);
+if(gen==0)
+ window.alert("choose gender");	
+*/
+//----validate choose your language----
+var f=document.getElementsById("course");
+var g=f.options[f.selected index].value;
+if(g == "select..")
+{
+alert("choose the course");
+return false;
+}
+/*
+//------validate contact number-----------
+var c=document.getElementById("mobileno").value;
+var x=/^\d{10}$/;
+if(c=="")
+{
+alert("enter your contact number");
+return false;
+}
+else if(!x.test(c))
+{
+alert("contact use number only");
+return false;
+}*/
+}
+
+</script>
+</body>
+</html>
